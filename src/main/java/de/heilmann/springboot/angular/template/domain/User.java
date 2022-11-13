@@ -1,18 +1,16 @@
 package de.heilmann.springboot.angular.template.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.extern.jackson.Jacksonized;
+import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "user_table")
-@Jacksonized
-@Builder
 @NoArgsConstructor
-@AllArgsConstructor
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
